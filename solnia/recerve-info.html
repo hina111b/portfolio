@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solnia - Nail Salon</title>
+  <style>
+  /*　設定　*/
+         :root {
+          --text-color: #222222;
+          --background-color: #ffffff;
+          --accent-color: #e0f0ff;
+          /* メインカラー */
+          --border-color: #eaeaea;
+          --gray-text-color: #888888;
+          --footer-bg-color: #3a3a3a;
+          --font-family-base: 'Noto Sans JP', sans-serif;
+          --font-family-title: 'Playfair Display', serif;
+        }
+  .info-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  </style>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="header-logo">
+      <img src="img/solnia-logo2.png" alt="solnia ロゴ">
+    </a>
+    <div class="header-right">
+      <nav class="header-nav" id="js-nav">
+        <ul>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#gallery">GALLERY</a>
+          </li>
+          <li>
+            <a href="#menu">MENU</a>
+          </li>
+          <li>
+            <a href="#information">INFORMATION</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+		  <a href="https://line.me/R/ti/p/@283hilid?ts=06032200&oat_content=url" target="_blank" aria-label="ご予約">
+			<img src="img/icon1.svg" alt="ご予約">予約する
+		  </a>
+        <a href="https://www.instagram.com/nail_solnia/" target="_blank" aria-label="Instagram">
+			<img src="img/Instagram-icon.svg" alt="Instagram">
+		  </a>
+      </div>
+      <div class="hamburger-menu" id="js-hamburger">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+      </div>
+    </div>
+  </header>
+ <section id="info">
+      <div class="container">
+        <h2 class="section-title">INFORMATION</h2>
+        <div class="info-box">
+  <section class="info">
+    <h2>お支払いについて</h2>
+    <p>当店でのお支払いは現金のみとなります。</p>
+  </section>
+          
+          <section class="info">
+            <h2>ご希望メニューについて</h2>
+            <p>長さ出し・補強などをご希望の方は、ご予約時に必ずお知らせください。</p>
+          </section>
+          
+          <section class="info">
+            <h2>施術前のお願い</h2>
+            <p>ハンドクリーム・ネイルオイルの使用はお控えください。</p>
+          </section>
+          
+          <section class="info">
+            <h2>遅刻・キャンセルについて</h2>
+            <ul>
+              <li>ご予約時間より10分以上の遅刻は、メニュー変更または施術をお断りする場合がございます。</li>
+              <li>キャンセルは前日20時までにお願いします。</li>
+            </ul>
+              <div class="note">※当日キャンセルはキャンセル料¥3,000が発生します。</div>
+          </section>
+          
+          <section class="info">
+            <h2>お直しについて</h2>
+            <p>1週間以内のお直しは無料です。<br>（以降は¥500/本）</p>
+          </section>
+        </div>
+        <div class="cta-button-container">
+          <a href="index.html" class="cta-button">< Back</a>
+        </div>
+		  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h3>Solnia</h3>
+          <p>静岡県焼津市
+            <br>プライベートネイルサロン
+            <br>営業時間 ｜ 9:00〜20:00
+            <br>定休日 ｜ なし</p>
+        </div>
+        <div class="footer-col">
+          <nav class="footer-nav" id="js-nav">
+            <ul>
+              <li>
+                <a href="#about">ABOUT</a>
+              </li>
+              <li>
+                <a href="#gallery">GALLERY</a>
+              </li>
+              <li>
+                <a href="#menu">MENU</a>
+              </li>
+              <li>
+                <a href="#information">INFORMATION</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <a href="https://www.instagram.com/nail_solnia" class="cta-footer-button2" target="_blank">
+            <img src="img/Instagram-icon.svg" alt="Instagram" class="button-icon">@solnia_nail</a>
+          <a href="https://line.me/R/ti/p/@283hilid?ts=06032200&oat_content=url" class="cta-footer-button1" target="_blank">
+            <img src="img/icon1.svg" alt="Instagram" class="button-icon">ご予約はこちら</a>
+          <a href="https://maps.app.goo.gl/kUXqMaNWJgf5oimS6" class="cta-footer-button2" target="_blank">
+            <img src="img/icon-access.svg" alt="Instagram" class="button-icon">Googleマップ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2025 Solnia. All rights reserved</p>
+    </div>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="トップへ戻る">▲</button>
+  <script>
+  const hamburger = document.getElementById('js-hamburger');
+      const nav = document.getElementById('js-nav');
+      const navLinks = nav.querySelectorAll('a');
+    
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    
+      // メニューの各リンクをクリックしたら閉じる
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          nav.classList.remove('active');
+        });
+      });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+  
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
