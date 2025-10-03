@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HINATA YOSHIMOTO — Portfolio</title>
+  <style>
+    /* ルート変数：テーマの色、フォント、サイズを定義 */
+    :root{
+      --bg:#faf9f7; /* 背景色 */
+      --card:#ffffff; /* カードの背景色 */
+      --accent:#2b6cb0; /* アクセントカラー */
+      --text:#1f2937; /* テキスト色 */
+      --muted:#6b7280; /* ミュートされたテキスト色 */
+      --max-width:1100px; /* 最大幅 */
+      --radius:12px; /* 角丸の半径 */
+      /* フォントファミリーの設定（日本語フォントを優先） */
+      font-family: "Hiragino Kaku Gothic ProN", Meiryo, "Noto Sans JP", sans-serif;
+    }
+    /* 全ての要素にbox-sizing: border-boxを適用 */
+    *{box-sizing:border-box}
+    /* htmlとbodyの高さ、マージンを設定し、背景画像を指定 */
+    html,body{height:100%;margin:0;background-image:img/zarazara-bg.png}
+    /* リンクのスタイル設定 */
+    a{color:inherit;text-decoration:none}
+    /* ラッパー要素のスタイル：最大幅、中央揃え、パディング */
+    .wrap{max-width:var(--max-width);margin:40px auto;padding:24px}
+
+    /* ヘッダーのスタイル：フレックスボックスで要素を配置 */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    /* ブランド名（ロゴ）のスタイル */
+    .brand{font-weight:700;font-size:18px;letter-spacing:1px}
+    /* ナビゲーションリンクのスタイル */
+    nav a{margin-left:18px;color:var(--muted);font-weight:600}
+
+    /* ヒーローセクションのスタイル：背景グラデーション、パディング、角丸など */
+    .hero{background:linear-gradient(180deg, rgba(43,108,176,0.06), transparent);padding:36px;border-radius:var(--radius);display:flex;flex-direction:column;gap:12px;margin-top:18px}
+    /* ヒーローセクションの見出しのスタイル */
+    .hero h1{margin:0;font-size:28px}
+    /* ヒーローセクションの段落のスタイル */
+    .hero p{margin:0;color:var(--muted)}
+
+    /* 各セクションの共通スタイル */
+    .section{margin-top:32px}
+    /* 各セクションの見出しのスタイル */
+    .section h2{margin:0 0 12px 0;font-size:20px}
+
+    /* 作品グリッドのスタイル：グリッドレイアウトで3列表示 */
+    .works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    /* カードの共通スタイル：背景、パディング、角丸、シャドウ */
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    /* カード内の見出しのスタイル */
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    /* カード内の段落のスタイル */
+    .card p{margin:0;color:var(--muted);line-height:1.6}
+
+    /* 自己紹介セクションのスタイル：カードと同様の背景、パディングなど */
+    .about{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    /* 自己紹介セクションの段落のスタイル */
+    .about p{margin:0 0 12px 0;color:var(--text);line-height:1.9}
+
+    /* フッターのスタイル：上部マージン、中央揃え、色、フォントサイズ */
+    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* レスポンシブデザイン：画面幅に応じた調整 */
+    @media (max-width:900px){
+      /* 900px以下では作品グリッドを2列表示に */
+      .works-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      /* 560px以下ではラッパーのパディングとマージンを調整 */
+      .wrap{padding:16px;margin:20px}
+      /* ヘッダーの要素を縦に並べる */
+      header{flex-direction:column;align-items:flex-start}
+      /* 作品グリッドを1列表示に */
+      .works-grid{grid-template-columns:1fr}
+      /* ヒーローセクションの見出しのフォントサイズを調整 */
+      .hero h1{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">HINATA YOSHIMOTO</div>
+      <nav>
+        <a href="#works">Works</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">魅せる×使いやすい をデザインする</h1>
+        <p>Contact</p>
+      </section>
+
+      <section id="works" class="section" aria-labelledby="works-title">
+        <h2 id="works-title">Works</h2>
+        <div class="works-grid">
+          <article class="card">
+            <h3>タイトル</h3>
+            <p>内容</p>
+          </article>
+
+          <article class="card">
+            <h3>タイトル</h3>
+            <p>内容</p>
+          </article>
+
+          <article class="card">
+            <h3>タイトル</h3>
+            <p>内容</p>
+          </article>
+
+          <article class="card">
+            <h3>タイトル</h3>
+
+            <p>内容</p>
+          </article>
+
+          <article class="card">
+            <h3>タイトル</h3>
+            <p>内容</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <h2 id="about-title">About me</h2>
+        <div class="about">
+          <p>鳥取県米子市出身。前職ではゼネコンに勤務し、現場監督として工程管理や品質管理を担当してきました。計画通りに物事を進めるためのスケジュール調整力や、正確さが求められる現場での経験を通じ、責任感と粘り強さを身につけました。</p>
+
+          <p>現在は職業訓練校でWebデザインとコーディングを学び、これまで培った計画性や現場感覚を活かしながら、新しい分野でのスキル習得に励んでいます。</p>
+
+          <p>制作においては「使う人の視点」を大切にし、見やすく、わかりやすく、そして信頼感を与えるデザインを心がけています。</p>
+
+          <p>趣味はパン作りやガーデニング、そして街を歩きながらの飲み歩き。ものづくりの楽しさと、人との出会いから得られる刺激を日々の原動力にしています。</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="card" style="margin-top:12px">
+          <p>（連絡先をここに記入）</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 HINATA YOSHIMOTO | All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
