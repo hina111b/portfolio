@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruit - Leading Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content container">
+      <div class="site-name">
+        <img src="img/logo.png" width="150" height="58" alt="">
+      </div>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html" class="contact-button">お問い合わせ</a>
+          </li>
+        </ul>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="hero-content">
+        <h2 data-english="採用情報">Recruit</h2>
+      </div>
+    </section>
+    <section id="recruit-detail">
+      <div class="container">
+        
+        <div class="center"><h2>未来へ挑戦する仲間を探しています。</h2> </div>
+        <div class="recruit-grid">
+          <div class="recruit-item">
+            <img src="img/Image%20(3).png" alt="採用">
+            <p>未来を自らの手で切り拓きたい方、ぜひ私たちと一緒に働きませんか?</p>
+            <p>ご興味をお持ちいただけましたら、ぜひ募集要項をご確認ください。</p>
+            <p>皆様からのご応募を心よりお待ちしております。</p>
+            <div class="recruit-info">
+              <h3>募集要項</h3>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>募集職種</th>
+                    <td>①システムエンジニア（プログラマー、システム運用、保守監視、等　総合職）
+                      <br>②Webデザイナー/マークアップデザインエンジニア</td>
+                  </tr>
+                  <tr>
+                    <th>募集対象</th>
+                    <td>※実務経験1年以上、若しくは同等のスキルを有する方は優遇。
+                      <br>開発分野、言語、機種は問いません。</td>
+                  </tr>
+                  <tr>
+                    <th>勤務地</th>
+                    <td>東京近郊(出向先)</td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>経験・能力により当社規定にて優遇</td>
+                  </tr>
+                  <tr>
+                    <th>勤務時間</th>
+                    <td>標準労働時間1日8時間/休憩60分</td>
+                  </tr>
+                  <tr>
+                    <th>休日休暇</th>
+                    <td>完全週休2日制、祝日、長期休暇（夏期、年末年始）、G.W休暇、年次有給休暇、慶弔休暇</td>
+                  </tr>
+                  <tr>
+                    <th>福利厚生</th>
+                    <td>雇用保険 ・労災保険 ・厚生年金</td>
+                  </tr>
+                  <tr>
+                    <th>応募方法</th>
+                    <td>
+                      <a href="mailto:leadingcompany_recruit@abc.net">leadingcompany_recruit@abc.net</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-all-button">
+        <a href="contact.html" class="button">応募する</a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Site name" class="logo-footer">
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Site name. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const navMenu = document.getElementById('navMenu');
+    hamburgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service - Leading Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content container">
+      <div class="site-name">
+        <img src="img/logo.png" width="150" height="58" alt="">
+      </div>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html" class="contact-button">お問い合わせ</a>
+          </li>
+        </ul>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="hero-content">
+        <h2 data-english="事業紹介">Service</h2>
+      </div>
+    </section>
+    <section id="service-detail">
+      <div class="container">
+        <h3>テクノロジーと信頼の力で、
+          <br>社会を豊かに導く。</h3>
+        <p>私たちは、革新的なテクノロジーを駆使し、あらゆる業界における課題を解決します。そして、お客様との誠実なコミュニケーションを通じて、持続可能な成長と豊かな社会の実現を目指します。</p>
+        <div class="section-content reverse1">
+          <div class="section-text">
+            <h3>IoTアプリケーションの開発</h3>
+            <p>IoTプラットフォームを使った開発コストを削減しより安価にソフトウェアを提供いたします。</p>
+          </div>
+          <div class="section-image">
+            <img src="img/Image.jpg" alt="事業紹介イメージ">
+          </div>
+        </div>
+        <div class="section-content reverse2">
+          <div class="section-text">
+            <h3>WEBシステム開発</h3>
+            <p>AWSの環境構築、ビジネス要件およびAWS要件の策定から利用するAWSサービスの最適化運用後の支援など行います</p>
+          </div>
+          <div class="section-image">
+            <img src="img/Image-1.jpg" alt="事業紹介イメージ">
+          </div>
+        </div>
+        <div class="section-content reverse3">
+          <div class="section-text">
+            <h3>WEBデザイン・HTML制作</h3>
+            <p>クライアントのニーズにあったサイト作成、集客アップのためのリニューアル。SEO対策やリスティング広告、YoutubeAdsにも対応いたします。</p>
+          </div>
+          <div class="section-image">
+            <img src="img/Image-2.jpg" alt="事業紹介イメージ">
+          </div>
+        </div>
+      </div>
+      <div class="news-all-button">
+        <a href="index.html" class="button">Homeに戻る</a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Site name" class="logo-footer">
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Site name. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const navMenu = document.getElementById('navMenu');
+    hamburgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+  </script>
+</body>
+
+</html>

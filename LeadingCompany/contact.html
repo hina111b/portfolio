@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - Leading Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content container">
+      <div class="site-name">
+        <img src="img/logo.png" width="150" height="58" alt="">
+      </div>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html" class="contact-button">お問い合わせ</a>
+          </li>
+        </ul>
+        <div class="hamburger-menu" id="hamburgerMenu">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="hero-content">
+        <h2 data-english="お問い合わせ">Contact</h2>
+      </div>
+    </section>
+    <section id="contact-form">
+      <div class="container">
+        <div class="center"><p>ご質問、ご相談などございましたら、下記のフォームよりお気軽にお問い合わせください。</p></div>
+        <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <th style="padding: 10px; text-align: right; vertical-align: top; width: 30%;">
+                <label for="name">お名前</label>
+              </th>
+              <td style="padding: 10px; text-align: left; vertical-align: top; width: 70%;">
+                <input type="text" id="name" name="name" required style="width: 95%;">
+              </td>
+            </tr>
+            <tr>
+              <th style="padding: 10px; text-align: right; vertical-align: top;">
+                <label for="email">メールアドレス</label>
+              </th>
+              <td style="padding: 10px; text-align: left; vertical-align: top;">
+                <input type="email" id="email" name="email" required style="width: 95%;">
+              </td>
+            </tr>
+            <tr>
+              <th style="padding: 10px; text-align: right; vertical-align: top;">
+                <label for="message">お問い合わせ内容</label>
+              </th>
+              <td style="padding: 10px; text-align: left; vertical-align: top;">
+                <textarea id="message" name="message" rows="5" required style="width: 95%;">
+                </textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding: 10px; text-align: center;">
+                <button type="submit" class="button">送信</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+       <div class="recruit-item">
+        <img src="img/Google_AI_Studio_2025-08-07T02_58_03.895Z.png" width="1280" height="896" alt=""/>
+      </div>
+	 </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Site name" class="logo-footer">
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="recruit.html">Recruit</a>
+          </li>
+          <li>
+            <a href="contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Site name. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const navMenu = document.getElementById('navMenu');
+    hamburgerMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+  </script>
+</body>
+
+</html>
